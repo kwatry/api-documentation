@@ -122,13 +122,13 @@ user type. Both flows are presented here for informational purposes.
 ## Child Social Sign-on
 For sign-ins from children younger than age 13. 
 
-![iOKids Child OAuth Flow](https://iokids-platform.gitlab.io/api-documentation/sso-flow-child.svg)
+![iOKids Child OAuth Flow](sso-flow-child.svg)
 
 
 ### Adult Social Sign-On
 For all users 14 years old and older. 
 
-![iOKids Adult OAuth Flow](https://iokids-platform.gitlab.io/api-documentation/sso-flow-adult.svg)
+![iOKids Adult OAuth Flow](sso-flow-adult.svg)
 
 For child users, your app will be able to authenticate but will not receive data through iOKids API calls until the 
 parent has granted permission for their child to use your app. Although this process is internal to iOKids, your app will
