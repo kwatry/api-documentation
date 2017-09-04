@@ -25,7 +25,7 @@ or [download](https://google.com) and run a mock iOKids server (via docker) to s
 machine. If you run a sandbox locally, follow the documentation below but use the client and user data provided with the mock server.
 
 2. Place the iOKids Social Sign-On button in your app:<br/>
-    <img alt="iOKids Rounded Rectangular Social Sign-On Button" src="iOKids%20SSO%20-%20Rounded%20Rectangle.png" style="height:36px">
+    <img alt="iOKids Rounded Rectangular Social Sign-On Button" src="iOKids%20SSO%20-%20Rounded%20Rectangle.png" style="height:48px">
     See our [brand guidelines](BrandGuidelines.md) For help placing the button. 
 
 3. Configure the OAuth flow best suited for your application. Test it in our sandbox environment.
