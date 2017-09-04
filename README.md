@@ -39,4 +39,4 @@ the developer's portal.
 5. Upgrade your account to become an [iOKids Partner](https://iokids.net/partners) and go live!
 
 
-APIs and Documenentation - Copyright 2017, Dynepic Inc. - All rights reserved
+APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved
