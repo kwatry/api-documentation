@@ -10,7 +10,7 @@ Developers have two button options:
 * A Rectangular button with rounded edges<br/>
     <img alt="iOKids Rounded Rectangular Social Sign-On Button" src="iOKids%20SSO%20-%20Rounded%20Rectangle.png" style="height:48px">
     
-## Create your own code
+## Create the iOKids button with code
 
 Developers have the option of creating the button in code using the following standards:
 * Rectangular button or rectangular with rounded edges
