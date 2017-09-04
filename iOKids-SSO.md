@@ -24,8 +24,8 @@ to assist you. With that background, your job will be mainly configuration and t
 or [download](https://google.com) and run a mock iOKids server (via docker) to simulate iOKids SSO on your development 
 machine. If you run a sandbox locally, follow the documentation below but use the client and user data provided with the mock server.
 
-2. Place the iOKids Social Sign-On button in your app:
-    ![SSO](iOKids%20SSO%20-%20Rounded%20Rectangle.png) 
+2. Place the iOKids Social Sign-On button in your app:<br/>
+    <img alt="iOKids Rounded Rectangular Social Sign-On Button" src="iOKids%20SSO%20-%20Rounded%20Rectangle.png" style="height:36px">
     See our [brand guidelines](BrandGuidelines.md) For help placing the button. 
 
 3. Configure the OAuth flow best suited for your application. Test it in our sandbox environment.
@@ -162,7 +162,7 @@ information, please review the [detailed flow](OAuthFlowDetails.md).
 | Mobile Application | You Application is deployed to a device, such as a phone, iPad, or Tablet. | Applicaton flow supports a code challenge per the [Proof Key for Code Exchange](https://tools.ietf.org/html/rfc7636) spec. 
 
 #### Basic Implementation Steps
-1. Log-in to the [iOKids Developer Dashboard](https://google.com) and retrieve your Social Sign-On credentials. Web Server
+1. Log-in to the [iOKids Developer Dashboard](https://sandbox.iokids.net/developer) and retrieve your Social Sign-On credentials. Web Server
 Applications will require your ClientID and ClientSecret while Client-side applications and mobile applications require
 only the ClientID.
 
@@ -199,7 +199,7 @@ a code challenge to the iOKids authorization server which is later returned with
 
 ### OAuth Libaries
 
-<a name="oauth-libraries></a>While developers could write code to manage the iOKids Social Sign-On flow ([see details](./OAuthFlowDetails.md)), most will choose to use a library that supports
+<a name="oauth2-libraries></a>While developers could write code to manage the iOKids Social Sign-On flow ([see details](./OAuthFlowDetails.md)), most will choose to use a library that supports
 the OAuth 2.0 protocol. The library should support passing a state variable in the authorization request.
 
 | Libarary | Implementation Type | Language / Stack | Notes |
