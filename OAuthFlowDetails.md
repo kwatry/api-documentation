@@ -118,3 +118,4 @@ The signature should be validated by the OAuth client using the key(s) found in 
 
 `example jwt...`
  
+APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved

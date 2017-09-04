@@ -217,4 +217,4 @@ iOKids currently supports one scope, "profile". As more APIs are available, each
 requested through the iOKids SSO.
 * **Profile** - Retrieve user profile information from iOKids
  
-APIs and Documenentation - Copyright 2017, Dynepic Inc. - All rights reserved
+APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved

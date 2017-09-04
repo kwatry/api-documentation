@@ -39,4 +39,4 @@ For children who do not have parental permission to use an application, the foll
 ```
 
 
-APIs and Documenentation - Copyright 2017, Dynepic Inc. - All rights reserved
+APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved
