@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+# iOKids API Documentation
 
-You can use the [editor on GitHub](https://github.com/Dynepic/api-documentation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Overview
+The iOKids platform offers **[COPPA compliant](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule)** 
+APIs that developers use to legally enable their products for use by children younger than 13 years old. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Using the iOKids APIs, you **inherit verifiable parental consent so children can use your products**. iOKids manage your 
+privacy policy and communicate to parents the kind of information your application collects, stores, and shares. 
+Finally, it offers developers a way to integrate our kid-safe social network into web and mobile apps so that you can 
+build a COPPA compliant community around your product. 
 
-### Markdown
+With iOKids, your users can share content, games, applications, pictures and video with friends and family. Children can 
+play interactive games with friends and even connect with physical toys. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Which APIs do I Need?
+Every developer must implement the [iOKids Social Sign-On API](/iOKids-SSO.md). Most developers will will want to interface
+with the [User Profile](/UserProfile.md). Other APIs are available for various needs: retrieving and managing friends, 
+challenging friends to interactive games and tracking results, interfacing with other applications and toys, and managing
+the permissions that govern all of these interactions. For detailed documentation about each API, click the name below. 
 
-```markdown
-Syntax highlighted code block
+| API | Version | Release Status | Description |
+| --- | ------- | ------ | ----------- |
+| [iOKids <br />Social Sign On](/iOKids-SSO.md) | 1.0.0 | Sept. 15, 2017 | Integrate iOKids users with your application. |
+| [User Profile](/UserProfile.md) | draft | Sept 22, 2017 | Retrieve profile information about an iOKids user |
+| Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
+| Challenge |  | *planning* | Allow users to challenge friends to play your app and track statistics |
+| Friends |  | *planning* | Get a users' list of friends, establish new friendships through your app |
+| Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
+| Applications and Toys |  | *planning* | Get a users' list of applications and the interactions they offer |
+| Permissions |  | *planning* | Manage user permissions for application use, features enablement, and shareability |
 
-# Header 1
-## Header 2
-### Header 3
+## Getting Started
+1. All applications must integrate iOKids Social Sign On. Start by reading the [API documentation](/iOKids-SSO.md). Follow 
+our examples and integrate within an hour.
+2. Set-up an account in the [Developer Sandbox](https://sandbox.iokids.net/developer) and register your application in 
+the developer's portal.  
+3. Integrate the [iOKids Social Sign-On](/iOKids-SSO.md) API and any of the others shown above.
+4. Test your integration in our test environment.
+5. Upgrade your account to become an [iOKids Partner](https://iokids.net/partners) and go live!
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Dynepic/api-documentation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+APIs and Documenentation - Copyright 2017, Dynepic Inc. - All rights reserved
