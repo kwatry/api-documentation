@@ -20,9 +20,9 @@ to assist you. With that background, your job will be mainly configuration and t
 
 
 ## Getting Started
-1. Start with Sandbox Testing. Either [sign-up for an iOKids Developer Account](https://sandbox.iokids.net/developer) and use our public sandbox
-or [download](https://google.com) and run a mock iOKids server (via docker) to simulate iOKids SSO on your development 
-machine. If you run a sandbox locally, follow the documentation below but use the client and user data provided with the mock server.
+1. Start with Sandbox Testing. Either [sign-up for an iOKids Developer Account](https://sandbox.iokids.net/developer) and 
+use our public sandbox or run a [mock iOKids server](MockServer.md) via [Docker](https://hub.docker.com/r/dynepic/iokids-sso-mock-server/) to simulate iOKids SSO on your development machine. 
+If you run a sandbox locally, follow the documentation below but use the client and [user data](MockServer.md#user-data) provided with the mock server.
 
 2. Place the iOKids Social Sign-On button in your app:<br/>
     <img alt="iOKids Rounded Rectangular Social Sign-On Button" src="iOKids%20SSO%20-%20Rounded%20Rectangle.png" style="height:48px">
