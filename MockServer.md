@@ -21,7 +21,7 @@ a browser and you should see `iOKids Mock SSO Server`.
 
 You can test the SSO flow using the free [Postman](https://www.getpostman.com/) application. After installing Postman:
 
-1. Create a new request. Use "GET" as the method and set the URL to `http://localhost:9000/my/profile`.
+1. Create a new request. Use "GET" as the method and set the URL to `http://localhost:9000/v1/my/profile`.
 2. On the Authorization tab, select `OAuth 2.0` from the Authorization *Type* drop-down.
 3. After selecting OAuth 2.0, click the new button called `Get New Access Token` and use the following as values:
 
@@ -52,7 +52,9 @@ You should receive a basic user profile in response:
     "userId": "7a30d2da9956431c899321a53b3ab653",
     "handle": "@user1",
     "firstName": "User",
-    "lastName": "One"
+    "lastName": "One",
+    "country": "us",
+    "userType": "child"
 }
 ```
 
@@ -74,6 +76,6 @@ And three users:
 | ------- | --------------- | ---------- | --------- | -------- | ----- |
 | 7a30d2da9956431c899321a53b3ab653 | @user1 | User | One | OAuthTest | |
 | d2ccfb039bbb4492997542a82ef68aa2 | @user2 | User | Two | OAuthTest | |
-| 502befd88c2d469987cbd50531abca5a | @user3 | User | Three | OAuthTest | This user can authenticate but never has permissions to use the profile service. The service always returns a 4011 error. See the [Profile API](UserProfile.md). |
+| 502befd88c2d469987cbd50531abca5a | @user3 | User | Three | OAuthTest | This user can authenticate but never has permissions to use the profile service. The service always returns a 4011 error. See the [Profile API](Profile.md). |
 
 APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved

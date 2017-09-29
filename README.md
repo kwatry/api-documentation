@@ -14,14 +14,14 @@ play interactive games with friends and even connect with physical toys.
 
 ## Which APIs do I Need?
 Every developer must implement the [iOKids Social Sign-On API](/iOKids-SSO.md). Most developers will will want to interface
-with the [User Profile](/UserProfile.md). Other APIs are available for various needs: retrieving and managing friends, 
+with the [User Profile](/Profile.md). Other APIs are available for various needs: retrieving and managing friends, 
 challenging friends to interactive games and tracking results, interfacing with other applications and toys, and managing
 the permissions that govern all of these interactions. For detailed documentation about each API, click the name below. 
 
 | API | Version | Release Status | Description |
 | --- | ------- | ------ | ----------- |
-| [iOKids <br />Social Sign On](/iOKids-SSO.md) | 1.0.0 | Sept. 15, 2017 | Integrate iOKids users with your application. |
-| [User Profile](/UserProfile.md) | draft | Sept 22, 2017 | Retrieve profile information about an iOKids user |
+| [iOKids <br />Social Sign On](/iOKids-SSO.md) | 1.0.0 | released | Integrate iOKids users with your application. |
+| [Profile](/Profile.md) | 1.0.0 | released | Retrieve profile information about an iOKids user |
 | Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
 | Challenge |  | *planning* | Allow users to challenge friends to play your app and track statistics |
 | Friends |  | *planning* | Get a users' list of friends, establish new friendships through your app |
