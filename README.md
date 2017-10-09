@@ -1,4 +1,4 @@
-# iOKids API Documentation
+# Internet of Kids<sup>TM</sup> (iOKids) API Documentation
 
 ## Overview
 The iOKids platform offers **[COPPA compliant](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule)** 
