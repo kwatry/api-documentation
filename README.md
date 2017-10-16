@@ -2,15 +2,17 @@
 
 ## Overview
 The iOKids platform offers **[COPPA compliant](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule)** 
-APIs that developers use to legally enable their products for use by children younger than 13 years old. 
+APIs that developers use to legally enable their products for use by children younger than 13 years old (Currently US only). 
 
-Using the iOKids APIs, you **inherit verifiable parental consent so children can use your products**. iOKids manage your 
-privacy policy and communicate to parents the kind of information your application collects, stores, and shares. 
-Finally, it offers developers a way to integrate our kid-safe social network into web and mobile apps so that you can 
-build a COPPA compliant community around your product. 
+Using the iOKids APIs, you **inherit verifiable parental consent so children can use your products**. iOKids provides a single 
+interface app where parents can easily provide consent for the information your application collects, stores, and shares. 
+Finally, it offers developers a way to integrate our kid-safe family network into web and mobile apps so that you can 
+build personalized and social features in your app, game, or tow like user customization, multi-player, battle-modes, and 
+kid-safe communities just to name a few. 
 
 With iOKids, your users can share content, games, applications, pictures and video with friends and family. Children can 
-play interactive games with friends and even connect with physical toys. 
+play interactive games with friends and even connect with physical toys. What are you waiting for? Let's starte creating
+cool connected play experiences today! Welcome to the iOKids platform!
 
 ## Which APIs do I Need?
 Every developer must implement the [iOKids Social Sign-On API](/iOKids-SSO.md). Most developers will will want to interface
