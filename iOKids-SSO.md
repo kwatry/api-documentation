@@ -199,7 +199,7 @@ a code challenge to the iOKids authorization server which is later returned with
 
 ### OAuth Libaries
 
-<a name="oauth2-libraries></a>While developers could write code to manage the iOKids Social Sign-On flow ([see details](./OAuthFlowDetails.md)), most will choose to use a library that supports
+<a name="oauth2-libraries"></a>While developers could write code to manage the iOKids Social Sign-On flow ([see details](./OAuthFlowDetails.md)), most will choose to use a library that supports
 the OAuth 2.0 protocol. The library should support passing a state variable in the authorization request.
 
 | Libarary | Implementation Type | Language / Stack | Notes |
