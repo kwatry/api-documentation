@@ -7,11 +7,11 @@ APIs that developers use to legally enable their products for use by children yo
 Using the iOKids APIs, you **inherit verifiable parental consent so children can use your products**. iOKids provides a single 
 interface app where parents can easily provide consent for the information your application collects, stores, and shares. 
 Finally, it offers developers a way to integrate our kid-safe family network into web and mobile apps so that you can 
-build personalized and social features in your app, game, or tow like user customization, multi-player, battle-modes, and 
+build personalized and social features in your app, game, or toy like user customization, multi-player, battle-modes, and 
 kid-safe communities just to name a few. 
 
 With iOKids, your users can share content, games, applications, pictures and video with friends and family. Children can 
-play interactive games with friends and even connect with physical toys. What are you waiting for? Let's starte creating
+play interactive games with friends and even connect with physical toys. What are you waiting for? Let's start creating
 cool connected play experiences today! Welcome to the iOKids platform!
 
 ## Which APIs do I Need?
@@ -31,7 +31,7 @@ the permissions that govern all of these interactions. For detailed documentatio
 | Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
 | Applications and Toys |  | *planning* | Get a users' list of applications and the interactions they offer |
 | Permissions |  | *planning* | Manage user permissions for application use, features enablement, and shareability |
-| Internet of Toys |  | *planning* | Allow toys and kids' devices to safely connect wirelessly with each other and cloud driven content. Discover other toys on the network and use electronic toys for control and environmental monitoring. |
+| Internet of Toys<sup>&reg;</sup> |  | *planning* | Allow toys and kids' devices to safely connect wirelessly with each other and cloud driven content. Discover other toys on the network and use electronic toys for control and environmental monitoring. |
 
 ## Getting Started
 1. All applications must integrate iOKids Social Sign On. Start by reading the [API documentation](/iOKids-SSO.md). Follow 
