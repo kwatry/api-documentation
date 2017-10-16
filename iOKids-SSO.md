@@ -126,7 +126,7 @@ For sign-ins from children younger than age 13.
 
 
 ### Adult Social Sign-On
-For all users 14 years old and older. 
+For all users 13 years old and older. 
 
 ![iOKids Adult OAuth Flow](sso-flow-adult.svg)
 
