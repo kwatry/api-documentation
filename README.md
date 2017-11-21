@@ -25,12 +25,12 @@ the permissions that govern all of these interactions. For detailed documentatio
 | [iOKids <br />Social Sign On](/iOKids-SSO.md) | 1.0.0 | released | Integrate iOKids users with your application. |
 | [Profile](/Profile.md) | 1.0.0 | released | Retrieve profile information about an iOKids user |
 | Friends |  | *planning* | Get a users' list of friends, establish new friendships through your app |
-| MojiTalk<sup>TM</sup> |  | *planning* | Text to speech messages with Emoji Sounds |
-| Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
 | Challenge |  | *planning* | Allow users to challenge friends to play your app and track statistics |
-| Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
+| Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
 | Applications and Toys |  | *planning* | Get a users' list of applications and the interactions they offer |
 | Permissions |  | *planning* | Manage user permissions for application use, features enablement, and shareability |
+| MojiTalk<sup>TM</sup> |  | *planning* | Text to speech messages with Emoji Sounds |
+| Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
 | Internet of Toys<sup>&reg;</sup> |  | *planning* | Allow toys and kids' devices to safely connect wirelessly with each other and cloud driven content. Discover other toys on the network and use electronic toys for control and environmental monitoring. |
 
 ## Getting Started
