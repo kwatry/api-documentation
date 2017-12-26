@@ -20,4 +20,3 @@ Developers have the option of creating the button in code using the following st
 * Button text is ALWAYS "Sign in with iOKids" (please match the text and case exactly)
 * Button font is ALWAYS [Roboto](https://fonts.google.com/specimen/Roboto)
 
-APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved

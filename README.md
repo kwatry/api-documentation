@@ -34,7 +34,7 @@ click the name below.
 | [Notify](Notify.md) | 1.0.0 | released | Update other users of your application as needed to support realtime competitions |
 | Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
 | Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
-| Invite | 1.0.0 | *planning* | Invite others to engage through your app |
+| Invite |  | *planning* | Invite others to engage through your app |
 | Applications and Toys |  | *planning* | Get a users' list of applications and the interactions they offer |
 | Permissions |  | *planning* | Manage user permissions for application use, features enablement, and shareability |
 | MojiTalk<sup>TM</sup> |  | *planning* | Text to speech messages with Emoji Sounds |
@@ -47,12 +47,14 @@ that will interact with the iOKids APIs. You will need an application identifier
 3. Start you application by integrating the iOKids Social Sign On. Start by reading the 
 [API documentation](/iOKids-SSO.md). Follow our examples and integrate within an hour.
 4. Socially enable your app by integrating with any of the APIs above. Test your integration in our sandbox environment 
-(download our Postman test suite to run a test of each API).
+(download our <a href="iOKids-APIs.postman_collection.json" download>Postman test suite</a> and 
+<a href="iOKids-APIs.postman_environment.json">environment variables</a> to run a test of each API).
 5. Upgrade your account to become an [iOKids Partner](https://iokids.net/partners) and go live!
 
 ## Resources
 
 1. You will create applications and users in the [partner dashboard](https://partner.iokids.net/).
-2. Download and use this <a href="iOKids-APIs.postman_collection.json" download>Postman collection</a> and <a href="iOKids-APIs.postman_environment.json">environment variables</a> to see example calls. You will need to configure
+2. Download and use this <a href="iOKids-APIs.postman_collection.json" download>Postman collection</a> and 
+<a href="iOKids-APIs.postman_environment.json">environment variables</a> to see example calls. You will need to configure
 the collection for your sample user.
 

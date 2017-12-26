@@ -78,4 +78,3 @@ And three users:
 | d2ccfb039bbb4492997542a82ef68aa2 | @user2 | User | Two | OAuthTest | |
 | 502befd88c2d469987cbd50531abca5a | @user3 | User | Three | OAuthTest | This user can authenticate but never has permissions to use the profile service. The service always returns a 4011 error. See the [Profile API](Profile.md). |
 
-APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved
