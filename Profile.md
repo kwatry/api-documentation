@@ -23,11 +23,12 @@ Call the profile route with a GET request:
 
 `GET https://sandbox.iokids.net/v1/my/profile`
 
-If you are using the self-contained sandbox running in a docker container:
+If the profile is a Parent, find associated kids with this call:
 
-`GET http://localhost:9000/v1/my/profile`
+`GET http://localhost:9000/v1/kids`
 
-A successful call returns a status of 200 and the following data structure:
+A successful call returns a status of 200 and the following data structure (or an array of these objects in the case of 
+kids):
 
 ```
 {

@@ -29,12 +29,13 @@ click the name below.
 | [iOKids <br />Social Sign On](/iOKids-SSO.md) | 1.0.0 | released | Integrate iOKids users with your application. |
 | [Profile](/Profile.md) | 1.0.0 | released | Retrieve profile information about an iOKids user |
 | [Friends](/Friends.md) | 1.0.0 | released | Get a users' list of friends, establish new friendships through your app |
-| [Invite](/Invite.md) | 1.0.0 | *planning* | Invite others to engage through your app |
+| [Search](/Search.md) | 1.0.0 | released | Search for other iOKids users who use your application |
 | [Application User Data](/ApplicationData.md) | 1.0.0 | released | Securely store the user data your app needs |
 | [Notify](Notify.md) | 1.0.0 | released | Update other users of your application as needed to support realtime competitions |
-| Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
-| Applications and Toys |  | *planning* | Get a users' list of applications and the interactions they offer |
 | Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
+| Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
+| Invite | 1.0.0 | *planning* | Invite others to engage through your app |
+| Applications and Toys |  | *planning* | Get a users' list of applications and the interactions they offer |
 | Permissions |  | *planning* | Manage user permissions for application use, features enablement, and shareability |
 | MojiTalk<sup>TM</sup> |  | *planning* | Text to speech messages with Emoji Sounds |
 | Internet of Toys<sup>&reg;</sup> |  | *planning* | Allow toys and kids' devices to safely connect wirelessly with each other and cloud driven content. Discover other toys on the network and use electronic toys for control and environmental monitoring. |
