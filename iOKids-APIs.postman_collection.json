@@ -42,10 +42,10 @@
 							"raw": "{\n\t\"grant_type\": \"refresh_token\",\n\t\"refresh_token\": \"{{refreshToken}}\",\n\t\"redirect_uri\": \"https://www.getpostman.com/oauth2/callback\",\n\t\"client_id\": \"{{clientId}}\",\n\t\"client_secret\": \"{{clientSecret}}\"\n}"
 						},
 						"url": {
-							"raw": "https://{{ssoServer}}/oauth/token",
+							"raw": "https://{{apiServer}}/oauth/token",
 							"protocol": "https",
 							"host": [
-								"{{ssoServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"oauth",
@@ -78,12 +78,13 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{userServer}}/v1/my/profile",
+							"raw": "https://{{apiServer}}/user/v1/my/profile",
 							"protocol": "https",
 							"host": [
-								"{{userServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
+								"user",
 								"v1",
 								"my",
 								"profile"
@@ -105,12 +106,13 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{userServer}}/v1/my/profile/cover",
+							"raw": "https://{{apiServer}}/user/v1/my/profile/cover",
 							"protocol": "https",
 							"host": [
-								"{{userServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
+								"user",
 								"v1",
 								"my",
 								"profile",
@@ -137,13 +139,15 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{userServer}}/v1/kids",
+							"raw": "https://{{apiServer}}/user/v1/my/kids",
 							"protocol": "https",
 							"host": [
-								"{{userServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
+								"user",
 								"v1",
+								"my",
 								"kids"
 							]
 						},
@@ -173,12 +177,13 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{userServer}}/v1/my/friends",
+							"raw": "https://{{apiServer}}/user/v1/my/friends",
 							"protocol": "https",
 							"host": [
-								"{{userServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
+								"user",
 								"v1",
 								"my",
 								"friends"
@@ -191,7 +196,7 @@
 			]
 		},
 		{
-			"name": "Notify",
+			"name": "Message",
 			"description": "Send and retrieve application notifications.",
 			"item": [
 				{
@@ -210,10 +215,10 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{messagingServer}}/v1/notification/list",
+							"raw": "https://{{apiServer}}/v1/notification/list",
 							"protocol": "https",
 							"host": [
-								"{{messagingServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"v1",
@@ -241,10 +246,10 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{messagingServer}}/?notificationId=NOTIFICATION_ID",
+							"raw": "https://{{apiServer}}/?notificationId=NOTIFICATION_ID",
 							"protocol": "https",
 							"host": [
-								"{{messagingServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								""
@@ -258,6 +263,38 @@
 							]
 						},
 						"description": "Retrieve a message"
+					},
+					"response": []
+				},
+				{
+					"name": "Message",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"notificationid\": \"NOTIFICATION_ID\",\n\t\"acknowledged\": true\n}"
+						},
+						"url": {
+							"raw": "https://{{apiServer}}/acknowledge",
+							"protocol": "https",
+							"host": [
+								"{{apiServer}}"
+							],
+							"path": [
+								"acknowledge"
+							]
+						},
+						"description": "Send a message"
 					},
 					"response": []
 				},
@@ -280,10 +317,10 @@
 							"raw": "{\n\t\"notificationid\": \"NOTIFICATION_ID\",\n\t\"acknowledged\": true\n}"
 						},
 						"url": {
-							"raw": "https://{{messagingServer}}/acknowledge",
+							"raw": "https://{{apiServer}}/acknowledge",
 							"protocol": "https",
 							"host": [
-								"{{messagingServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"acknowledge"
@@ -312,10 +349,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{messagingServer}}/acknowledge",
+							"raw": "https://{{apiServer}}/acknowledge",
 							"protocol": "https",
 							"host": [
-								"{{messagingServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"acknowledge"
@@ -350,14 +387,15 @@
 							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app",
+							"raw": "https://{{apiServer}}/app/v1/",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
+								"app",
 								"v1",
-								"app"
+								""
 							]
 						},
 						"description": "Retrieve information about this application"
@@ -383,14 +421,14 @@
 							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/data",
+							"raw": "https://{{apiServer}}/app/v1/data",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
-								"v1",
 								"app",
+								"v1",
 								"data"
 							]
 						},
@@ -417,14 +455,14 @@
 							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/data",
+							"raw": "https://{{apiServer}}/app/v1/data",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
-								"v1",
 								"app",
+								"v1",
 								"data"
 							]
 						},
@@ -433,7 +471,7 @@
 					"response": []
 				},
 				{
-					"name": "OPEN Create Store Application Bucket Data",
+					"name": "Create Store Application Bucket Data",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -451,14 +489,14 @@
 							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/bucket",
+							"raw": "https://{{apiServer}}/app/v1/bucket",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
-								"v1",
 								"app",
+								"v1",
 								"bucket"
 							]
 						},
@@ -467,7 +505,7 @@
 					"response": []
 				},
 				{
-					"name": "OPEN Store Application Bucket Data",
+					"name": "Store Application Bucket Data",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -485,10 +523,10 @@
 							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/bucket?id=BUCKET_ID",
+							"raw": "https://{{apiServer}}/v1/app/bucket?id=BUCKET_ID",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"v1",
@@ -508,7 +546,7 @@
 					"response": []
 				},
 				{
-					"name": "OPEN Get Application Bucket Data",
+					"name": "Get Application Bucket Data",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -526,10 +564,10 @@
 							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/bucket?id=BUCKET_ID",
+							"raw": "https://{{apiServer}}/v1/app/bucket?id=BUCKET_ID",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"v1",
@@ -549,7 +587,7 @@
 					"response": []
 				},
 				{
-					"name": "OPEN Delete Store Application Bucket Data",
+					"name": "Delete Store Application Bucket Data",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -567,10 +605,10 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/bucket?id=BUCKET_ID",
+							"raw": "https://{{apiServer}}/v1/app/bucket?id=BUCKET_ID",
 							"protocol": "https",
 							"host": [
-								"{{appServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
 								"v1",
@@ -607,14 +645,14 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{imageServer}}/v1/image/static/IMAGE_ID",
+							"raw": "https://{{apiServer}}/image/v1/static/IMAGE_ID",
 							"protocol": "https",
 							"host": [
-								"{{imageServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
-								"v1",
 								"image",
+								"v1",
 								"static",
 								"IMAGE_ID"
 							]
@@ -645,15 +683,15 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{userServer}}/v1/search/user?term=SEARCH_TERM",
+							"raw": "https://{{apiServer}}/user/v1/search?term=SEARCH_TERM",
 							"protocol": "https",
 							"host": [
-								"{{userServer}}"
+								"{{apiServer}}"
 							],
 							"path": [
+								"user",
 								"v1",
-								"search",
-								"user"
+								"search"
 							],
 							"query": [
 								{
@@ -664,6 +702,45 @@
 							]
 						},
 						"description": "Search for a user based on a search term"
+					},
+					"response": []
+				},
+				{
+					"name": "Random",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://{{apiServer}}/user/v1/search/random?count=5",
+							"protocol": "https",
+							"host": [
+								"{{apiServer}}"
+							],
+							"path": [
+								"user",
+								"v1",
+								"search",
+								"random"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "5",
+									"equals": true
+								}
+							]
+						},
+						"description": "Search for random people"
 					},
 					"response": []
 				}
@@ -690,38 +767,6 @@
 					""
 				]
 			}
-		}
-	],
-	"variable": [
-		{
-			"id": "5b191207-a266-41a2-9dd6-3385af670177",
-			"key": "ssoServer",
-			"value": "sandbox-sso.mybluemix.net",
-			"type": "text"
-		},
-		{
-			"id": "f7506d98-3b56-40ed-8465-b2c77d3aa791",
-			"key": "userServer",
-			"value": "sandbox-api-user-server.mybluemix.net",
-			"type": "text"
-		},
-		{
-			"id": "a0082351-e7c9-4cdd-b40c-070ad2882588",
-			"key": "appServer",
-			"value": "sandbox-api-app-server.mybluemix.net",
-			"type": "text"
-		},
-		{
-			"id": "fd8bdbee-4883-4183-8c61-9f7914331048",
-			"key": "messagingServer",
-			"value": "sandbox-api-messaging-server.mybluemix.net",
-			"type": "text"
-		},
-		{
-			"id": "60a314fa-6176-4e40-9558-0c39fcb085c0",
-			"key": "imageServer",
-			"value": "sandbox-api-image-server.mybluemix.net",
-			"type": "text"
 		}
 	]
 }
