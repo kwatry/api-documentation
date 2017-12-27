@@ -55,6 +55,6 @@ that will interact with the iOKids APIs. You will need an application identifier
 
 1. You will create applications and users in the [partner dashboard](https://partner.iokids.net/).
 2. Download and use this <a href="iOKids-APIs.postman_collection.json" download>Postman collection</a> and 
-<a href="iOKids-APIs.postman_environment.json">environment variables</a> to see example calls. You will need to configure
+<a href="iOKids-APIs.postman_environment.json" download>environment variables</a> to see example calls. You will need to configure
 the collection for your sample user.
 
