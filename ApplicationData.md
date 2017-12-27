@@ -215,7 +215,7 @@ If the delete is successful, all users in the list will receive a message like t
 }
 ```
 
-##Using the REST Interface
+## Using the REST Interface
 
 Store user-specific data with a PUT request. The single sign-on authentication token uniquely identifies the application 
 and user so only the custom data object is required. A successful PUT results in a 200 with no response data.

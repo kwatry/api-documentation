@@ -210,13 +210,14 @@
 						],
 						"body": {},
 						"url": {
-							"raw": "https://{{messagingServer}}/v1/list",
+							"raw": "https://{{messagingServer}}/v1/notification/list",
 							"protocol": "https",
 							"host": [
 								"{{messagingServer}}"
 							],
 							"path": [
 								"v1",
+								"notification",
 								"list"
 							]
 						},
@@ -349,7 +350,7 @@
 							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app?appId={{appId}}",
+							"raw": "https://{{appServer}}/v1/app",
 							"protocol": "https",
 							"host": [
 								"{{appServer}}"
@@ -357,13 +358,6 @@
 							"path": [
 								"v1",
 								"app"
-							],
-							"query": [
-								{
-									"key": "appId",
-									"value": "{{appId}}",
-									"equals": true
-								}
 							]
 						},
 						"description": "Retrieve information about this application"
@@ -389,7 +383,7 @@
 							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/data?appId={{appId}}",
+							"raw": "https://{{appServer}}/v1/app/data",
 							"protocol": "https",
 							"host": [
 								"{{appServer}}"
@@ -398,13 +392,6 @@
 								"v1",
 								"app",
 								"data"
-							],
-							"query": [
-								{
-									"key": "appId",
-									"value": "{{appId}}",
-									"equals": true
-								}
 							]
 						},
 						"description": "Retrieve the data stored for this user"
@@ -430,7 +417,7 @@
 							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/data?appId={{appId}}",
+							"raw": "https://{{appServer}}/v1/app/data",
 							"protocol": "https",
 							"host": [
 								"{{appServer}}"
@@ -439,13 +426,6 @@
 								"v1",
 								"app",
 								"data"
-							],
-							"query": [
-								{
-									"key": "appId",
-									"value": "{{appId}}",
-									"equals": true
-								}
 							]
 						},
 						"description": "Store data for this user"
@@ -453,9 +433,9 @@
 					"response": []
 				},
 				{
-					"name": "OPEN Get Application Bucket Data",
+					"name": "OPEN Create Store Application Bucket Data",
 					"request": {
-						"method": "GET",
+						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -468,10 +448,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
+							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/data?appId={{appId}}",
+							"raw": "https://{{appServer}}/v1/app/bucket",
 							"protocol": "https",
 							"host": [
 								"{{appServer}}"
@@ -479,17 +459,10 @@
 							"path": [
 								"v1",
 								"app",
-								"data"
-							],
-							"query": [
-								{
-									"key": "appId",
-									"value": "{{appId}}",
-									"equals": true
-								}
+								"bucket"
 							]
 						},
-						"description": "Retrieve the data shared between users"
+						"description": "Store application data shared between users"
 					},
 					"response": []
 				},
@@ -512,7 +485,7 @@
 							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
 						},
 						"url": {
-							"raw": "https://{{appServer}}/v1/app/data?appId={{appId}}",
+							"raw": "https://{{appServer}}/v1/app/bucket?id=BUCKET_ID",
 							"protocol": "https",
 							"host": [
 								"{{appServer}}"
@@ -520,17 +493,99 @@
 							"path": [
 								"v1",
 								"app",
-								"data"
+								"bucket"
 							],
 							"query": [
 								{
-									"key": "appId",
-									"value": "{{appId}}",
+									"key": "id",
+									"value": "BUCKET_ID",
 									"equals": true
 								}
 							]
 						},
 						"description": "Store application data shared between users"
+					},
+					"response": []
+				},
+				{
+					"name": "OPEN Get Application Bucket Data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
+						},
+						"url": {
+							"raw": "https://{{appServer}}/v1/app/bucket?id=BUCKET_ID",
+							"protocol": "https",
+							"host": [
+								"{{appServer}}"
+							],
+							"path": [
+								"v1",
+								"app",
+								"bucket"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "BUCKET_ID",
+									"equals": true
+								}
+							]
+						},
+						"description": "Retrieve the data shared between users"
+					},
+					"response": []
+				},
+				{
+					"name": "OPEN Delete Store Application Bucket Data",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://{{appServer}}/v1/app/bucket?id=BUCKET_ID",
+							"protocol": "https",
+							"host": [
+								"{{appServer}}"
+							],
+							"path": [
+								"v1",
+								"app",
+								"bucket"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "BUCKET_ID",
+									"equals": true
+								}
+							]
+						},
+						"description": "Remove application data shared between users"
 					},
 					"response": []
 				}
@@ -565,39 +620,6 @@
 							]
 						},
 						"description": "Retrieve an Image by Id"
-					},
-					"response": []
-				},
-				{
-					"name": "Store Image",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"data\": \"BASE 64 ENCODED JPEG, e.g. \"\n}"
-						},
-						"url": {
-							"raw": "https://{{imageServer}}/v1/image",
-							"protocol": "https",
-							"host": [
-								"{{imageServer}}"
-							],
-							"path": [
-								"v1",
-								"image"
-							]
-						},
-						"description": "Store an image"
 					},
 					"response": []
 				}
@@ -672,31 +694,31 @@
 	],
 	"variable": [
 		{
-			"id": "e99d18a1-07ef-4499-99c3-8bab6c15ab9f",
+			"id": "5b191207-a266-41a2-9dd6-3385af670177",
 			"key": "ssoServer",
 			"value": "sandbox-sso.mybluemix.net",
 			"type": "text"
 		},
 		{
-			"id": "636dcde6-b4c1-4bfe-afb4-165da4cf1823",
+			"id": "f7506d98-3b56-40ed-8465-b2c77d3aa791",
 			"key": "userServer",
 			"value": "sandbox-api-user-server.mybluemix.net",
 			"type": "text"
 		},
 		{
-			"id": "d1e2313a-6921-4bc0-b8c2-72f263739b52",
+			"id": "a0082351-e7c9-4cdd-b40c-070ad2882588",
 			"key": "appServer",
 			"value": "sandbox-api-app-server.mybluemix.net",
 			"type": "text"
 		},
 		{
-			"id": "8edb2a3e-4155-460c-ae94-74c818a647c6",
+			"id": "fd8bdbee-4883-4183-8c61-9f7914331048",
 			"key": "messagingServer",
 			"value": "sandbox-api-messaging-server.mybluemix.net",
 			"type": "text"
 		},
 		{
-			"id": "230f044f-bbed-4a2f-a507-ce4289e8317d",
+			"id": "60a314fa-6176-4e40-9558-0c39fcb085c0",
 			"key": "imageServer",
 			"value": "sandbox-api-image-server.mybluemix.net",
 			"type": "text"
