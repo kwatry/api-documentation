@@ -222,7 +222,7 @@ Store user-specific data with a PUT request. The single sign-on authentication t
 and user so only the custom data object is required. A successful PUT results in a 200 with no response data.
 
 ```
-PUT https://sandbox.iokids.net/v1/userdata
+PUT https://sandbox.iokids.net/app/v1/data
 
 {
     "level": 6,
@@ -244,7 +244,7 @@ Retrieve user-specific data with a GET request. The single sign-on token uniquel
 no further data is required. A successful call returns a status of 200 and the custom data structure:
 
 ```
-GET https://sandbox.iokids.net/v1/userdata
+GET https://sandbox.iokids.net/app/v1/data
 
 {
     "level": 6,
@@ -264,7 +264,7 @@ GET https://sandbox.iokids.net/v1/userdata
 
 A delete is performed with a DELETE request. A successful call returns a status of 200.
 
-`DELETE https://sandbox.iokids.net/v1/userdata`
+`DELETE https://sandbox.iokids.net/app/v1/data`
 
 For users that have an invalid token, a status of 401 is returned with:
 ```

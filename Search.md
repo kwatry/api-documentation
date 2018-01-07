@@ -9,7 +9,7 @@ data structure, please review the [Profile API](/Profile.md) definition.
 
 Search with a GET request using the searchTerm attribute:
 
-`GET https://sandbox.iokids.net/v1/search/user?term=SEARCH_TERM`
+`GET https://sandbox.iokids.net/user/v1/search?term=SEARCH_TERM`
 
 A successful call returns a status of 200 and the following data structure:
 

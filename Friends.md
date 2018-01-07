@@ -10,7 +10,7 @@ please review the [Profile API](/Profile.md) definition.
 
 Call the friends route with a GET request:
 
-`GET https://sandbox.iokids.net/v1/my/friends`
+`GET https://sandbox.iokids.net/user/v1/my/friends`
 
 A successful call returns a status of 200 and the following data structure:
 
