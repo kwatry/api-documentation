@@ -1,3 +1,0 @@
-# iOKids Invitation API
-
-to come...

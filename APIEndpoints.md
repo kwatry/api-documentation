@@ -17,3 +17,4 @@ combining the environment and the API path. Details are listed below.
 | Application User Data | app/v1 <br/> app/v1/data <br/> app/v1/bucket <br> app/ws (websockets) | Application-specific User Data API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/ApplicationUserData/1.0.0) |
 | Images | image/v1/static | Image API | coming soon |
 | Search | user/v1/search <br/> user/v1/search/random | Search API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/Search/1.0.0) |
+| Notify | notify/v1/notification <br/> notify/v1/notification/list <br> notify/v1/acknowledge | Notify API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) |

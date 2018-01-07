@@ -76,5 +76,5 @@ And three users:
 | ------- | --------------- | ---------- | --------- | -------- | ----- |
 | 7a30d2da9956431c899321a53b3ab653 | @user1 | User | One | OAuthTest | |
 | d2ccfb039bbb4492997542a82ef68aa2 | @user2 | User | Two | OAuthTest | |
-| 502befd88c2d469987cbd50531abca5a | @user3 | User | Three | OAuthTest | This user can authenticate but never has permissions to use the profile service. The service always returns a 4011 error. See the [Profile API](Profile.md). |
+| 502befd88c2d469987cbd50531abca5a | @user3 | User | Three | OAuthTest | This user can authenticate but never has permissions to use the profile service. The service always returns a 4011 error. |
 

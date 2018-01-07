@@ -19,7 +19,7 @@ What are you waiting for? Let’s start creating cool connected play experiences
 
 ## Which APIs do I Need?
 Every developer must implement the [iOKids Social Sign-On API](/iOKids-SSO.md). Most developers will will want to interface
-with the [User Profile](/Profile.md) and [Friends](/Friends.md) APIs. Other APIs are available for various needs: 
+with the [User Profile](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) and [Friends](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) APIs. Other APIs are available for various needs: 
 inviting friends to use interactive games, securely storing user data your app needs, interfacing with other applications 
 and toys, and managing the permissions that govern all of these interactions. For detailed documentation about each API, 
 click the name below. 
@@ -27,11 +27,12 @@ click the name below.
 | API | Version | Release Status | Description |
 | --- | ------- | ------ | ----------- |
 | [iOKids <br />Social Sign On](/iOKids-SSO.md) | 1.0.0 | released | Integrate iOKids users with your application. |
-| [Profile](/Profile.md) | 1.0.0 | released | Retrieve profile information about an iOKids user |
-| [Friends](/Friends.md) | 1.0.0 | released | Get a users' list of friends, establish new friendships through your app |
-| [Search](/Search.md) | 1.0.0 | released | Search for other iOKids users who use your application |
+| [Profile](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) | 1.0.0 | released | Retrieve profile information about an iOKids user |
+| [Friends](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) | 1.0.0 | released | Get a users' list of friends, establish new friendships through your app |
+| [Search](/https://app.swaggerhub.com/apis/iOKids/Search/1.0.0) | 1.0.0 | released | Search for other iOKids users who use your application |
 | [Application User Data](/ApplicationData.md) | 1.0.0 | released | Securely store the user data your app needs |
-| [Notify](Notify.md) | 1.0.0 | released | Update other users of your application as needed to support realtime competitions |
+| [Notify](https://app.swaggerhub.com/apis/iOKids/Notify/1.0.0) | 1.0.0 | released | Update other users of your application as needed to support realtime competitions |
+| Image | pre-release |  | Retrieve and store images |
 | Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
 | Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
 | Invite |  | *planning* | Invite others to engage through your app |
