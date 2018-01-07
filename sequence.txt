@@ -25,5 +25,24 @@ Your App->iOKids: API Calls
 iOKids-->Your App: API Responses
 
 
+participant User
+participant Your App
+Your App->iOKids: Get Auth Code
+User->iOKids: Log-in and Consent
+iOKids-->Your App: Return Auth Code
+Your App->iOKids: Get Token
+iOKids-->Your App: Return Token
+Your App->iOKids: API Calls
+iOKids-->Your App: API Responses
+
+
+participant User
+participant Your App
+Your App->iOKids: Request Log-in
+User->iOKids: Log-in
+iOKids-->Your App: Return Token
+Your App->iOKids: API Calls
+iOKids-->Your App: API Responses
+
 
 https://bramp.github.io/js-sequence-diagrams/

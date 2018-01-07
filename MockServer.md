@@ -1,7 +1,7 @@
 # Running an iOKids Mock SSO Server
 
 Developers can test the [iOKids Social Sign-On](iOKids-SSO.md) flow on their development machines with the help of the 
-iOKids Mock SSO Server available via docker container.
+iOKids Mock SSO Server available via via [docker container](https://hub.docker.com/r/dynepic/iokids-sso-mock-server/).
 
 ## Run the Mock Server
 
