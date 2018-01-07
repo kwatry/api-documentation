@@ -17,6 +17,27 @@ providing full 360-degree engagement.
 
 What are you waiting for? Let’s start creating cool connected play experiences today! Welcome to the iOKids platform!
 
+## Getting Started
+1. [Sign-up](https://partner.iokids.net) to be an iOKids Partner. Review our <a href="iOKids-Developer-Setup.pdf" download>Step 
+by Step guide</a> for developer on-boarding.
+2. Log-in to the [partner dashboard](https://partner.iokids.net/) to [create an application](/CreateAnApplication.md) 
+that will interact with the iOKids APIs. You will need an application identifier to use any of the iOKids APIs.
+3. Start you application by integrating the iOKids Social Sign On. Start by reading the 
+[API documentation](/iOKids-SSO.md). Follow our examples and integrate within an hour.
+4. Socially enable your app by integrating with any of the APIs above. Test your integration in our sandbox environment 
+(download our <a href="iOKids-APIs.postman_collection.json" download>Postman test suite</a> and 
+<a href="iOKids-APIs.postman_environment.json">environment variables</a> to run a test of each API). 
+5. Upgrade your account to become an [iOKids Partner](https://iokids.net/partners) and go live!
+
+## Resources
+
+1. You will create applications and users in the [partner dashboard](https://partner.iokids.net/).
+2. Learn how to use the partner dashboard for sandbox testing with our <a href="iOKids-Developer-Setup.pdf" download>developer set-up guide</a>.
+3. Download and use this <a href="iOKids-APIs.postman_collection.json" download>Postman collection</a> and 
+<a href="iOKids-APIs.postman_environment.json" download>environment variables</a> to see example calls. 
+4. Learn how to configure the Postman collection and environment variables with our 
+<a href="Configure-Postman-for-iOKids.pdf" download>configuration guide</a>.
+
 ## Which APIs do I Need?
 Every developer must implement the [iOKids Social Sign-On API](/iOKids-SSO.md). Most developers will will want to interface
 with the [User Profile](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) and [Friends](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) APIs. Other APIs are available for various needs: 
@@ -41,21 +62,4 @@ click the name below.
 | MojiTalk<sup>TM</sup> |  | *planning* | Text to speech messages with Emoji Sounds |
 | Internet of Toys<sup>&reg;</sup> |  | *planning* | Allow toys and kids' devices to safely connect wirelessly with each other and cloud driven content. Discover other toys on the network and use electronic toys for control and environmental monitoring. |
 
-## Getting Started
-1. Sign-up to be an iOKids Partner (contact us!)
-2. Log-in to the [partner dashboard](https://partner.iokids.net/) to [create an application](/CreateAnApplication.md) 
-that will interact with the iOKids APIs. You will need an application identifier to use any of the iOKids APIs.
-3. Start you application by integrating the iOKids Social Sign On. Start by reading the 
-[API documentation](/iOKids-SSO.md). Follow our examples and integrate within an hour.
-4. Socially enable your app by integrating with any of the APIs above. Test your integration in our sandbox environment 
-(download our <a href="iOKids-APIs.postman_collection.json" download>Postman test suite</a> and 
-<a href="iOKids-APIs.postman_environment.json">environment variables</a> to run a test of each API).
-5. Upgrade your account to become an [iOKids Partner](https://iokids.net/partners) and go live!
-
-## Resources
-
-1. You will create applications and users in the [partner dashboard](https://partner.iokids.net/).
-2. Download and use this <a href="iOKids-APIs.postman_collection.json" download>Postman collection</a> and 
-<a href="iOKids-APIs.postman_environment.json" download>environment variables</a> to see example calls. You will need to configure
-the collection for your sample user.
 
