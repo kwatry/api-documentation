@@ -66,7 +66,7 @@ Enterprise partners have these additional duties:
 * Establish a privacy policy for your application. Clearly communicate which information can be collected, stored and 
 shared by your app. 
 
-    *In the [developer dashboard](https://sandbox.iokids.net/developer), we make it easy for you to explain your privacy policy and manage it for iOKids Social 
+    *In the [developer dashboard](https://partner.iokids.net/dashboard), we make it easy for you to explain your privacy policy and manage it for iOKids Social 
     SignOn users via the iOKids short-form privacy dashboard.*
 
 * Follow your privacy policy! Don't collect, store or share any information you have not disclosed to your users.

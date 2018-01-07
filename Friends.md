@@ -1,7 +1,7 @@
 # iOKids Friends API
 
 The iOKids Profile API allows authenticated users to retrieve their list of iOKids friends. Developers can test the API 
-with a free [developer account](https://sandbox.iokids.net/developer). Partners can use the friends API to retrieve basic 
+with a free [developer account](https://partner.iokids.net/). Partners can use the friends API to retrieve basic 
 profile information for friends iOKids users.
 
 Developers can review the [detailed API specification](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) on SwaggerHub. 

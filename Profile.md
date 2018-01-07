@@ -1,7 +1,7 @@
 # iOKids Profile API
 
 The iOKids Profile API allows authenticated users to pull information from their profile. Developers can test the API 
-with a free [developer account](https://sandbox.iokids.net/developer). Partners can use the profile to retrieve profile
+with a free [developer account](https://partner.iokids.net/). Partners can use the profile to retrieve profile
 information for iOKids users.
 
 Developers can review the [detailed API specification](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) on SwaggerHub. 
@@ -57,5 +57,3 @@ For children who do not have parental permission to use an application, the foll
 }
 ```
 
-
-APIs and Documentation - Copyright 2017, Dynepic Inc. - All rights reserved
