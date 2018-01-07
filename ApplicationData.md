@@ -14,6 +14,7 @@ This server's primary mode of interaction is via websockets.  API users should u
 user that wishes to interact with app data and app buckets. Developers can optionally use the RESTful API (see 
 definition below), however data buckets are only available through the websocket interface for now. 
 
+
 ## Websocket Usage
 
 ### Connecting

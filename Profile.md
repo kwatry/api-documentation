@@ -21,11 +21,11 @@ Future versions of the profile API may include information about the guardian if
 
 Call the profile route with a GET request:
 
-`GET https://sandbox.iokids.net/v1/my/profile`
+`GET https://sandbox.iokids.net/user/v1/my/profile`
 
 If the profile is a Parent, find associated kids with this call:
 
-`GET http://localhost:9000/v1/kids`
+`GET http://localhost:9000/user/v1/my/kids`
 
 A successful call returns a status of 200 and the following data structure (or an array of these objects in the case of 
 kids):
