@@ -15,6 +15,6 @@ combining the environment and the API path. Details are listed below.
 | Profile | user/v1/my/profile <br/> user/v1/my/profile/cover <br/> user/v1/my/kids | Profile API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) |
 | Friends | user/v1/my/friends | Friends API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) |
 | Application User Data | app/v1 <br/> app/v1/data <br/> app/v1/bucket <br> app/ws (websockets) | Application-specific User Data API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/ApplicationUserData/1.0.0) |
-| Images | image/v1/static | Image API | coming soon |
+| Images | image/v1/static | Image API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/Image/1.0.0) |
 | Search | user/v1/search <br/> user/v1/search/random | Search API | [swagger doc](https://app.swaggerhub.com/apis/iOKids/Search/1.0.0) |
 | Notify | notify/v1/notification <br/> notify/v1/notification/list <br> notify/v1/acknowledge | Notify API | coming soon |

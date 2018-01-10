@@ -52,7 +52,7 @@ click the name below.
 | [Friends](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) | 1.0.0 | released | Get a users' list of friends, establish new friendships through your app |
 | [Search](/https://app.swaggerhub.com/apis/iOKids/Search/1.0.0) | 1.0.0 | released | Search for other iOKids users who use your application |
 | [Application User Data](/ApplicationData.md) | 1.0.0 | released | Securely store the user data your app needs |
-| Image | pre-release |  | Retrieve and store images |
+| [Image](https://app.swaggerhub.com/apis/iOKids/Image/1.0.0) | 1.0.0 | released | Retrieve and store images |
 | Notify | 1.0.0 | pre-release | Update other users of your application as needed to support realtime competitions |
 | Share to iOKids |  | *planning* | Share content from your app or toy on an iOKids profile and with friends |
 | Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |
