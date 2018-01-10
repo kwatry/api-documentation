@@ -95,6 +95,39 @@
 					"response": []
 				},
 				{
+					"name": "My Profile Picture",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://{{apiServer}}/user/v1/my/profile/picture",
+							"protocol": "https",
+							"host": [
+								"{{apiServer}}"
+							],
+							"path": [
+								"user",
+								"v1",
+								"my",
+								"profile",
+								"picture"
+							]
+						},
+						"description": "Retrieve my profile"
+					},
+					"response": []
+				},
+				{
 					"name": "My Cover Photo",
 					"request": {
 						"method": "GET",
@@ -403,40 +436,6 @@
 					"response": []
 				},
 				{
-					"name": "Get Application User Data",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
-						},
-						"url": {
-							"raw": "https://{{apiServer}}/app/v1/data",
-							"protocol": "https",
-							"host": [
-								"{{apiServer}}"
-							],
-							"path": [
-								"app",
-								"v1",
-								"data"
-							]
-						},
-						"description": "Retrieve the data stored for this user"
-					},
-					"response": []
-				},
-				{
 					"name": "Store Application User Data",
 					"request": {
 						"method": "POST",
@@ -471,7 +470,41 @@
 					"response": []
 				},
 				{
-					"name": "Create Store Application Bucket Data",
+					"name": "Get Application User Data",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
+						},
+						"url": {
+							"raw": "https://{{apiServer}}/app/v1/data",
+							"protocol": "https",
+							"host": [
+								"{{apiServer}}"
+							],
+							"path": [
+								"app",
+								"v1",
+								"data"
+							]
+						},
+						"description": "Retrieve the data stored for this user"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Application Bucket Data",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -486,7 +519,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
+							"raw": "{\n\t\"users\": [\"USER ID 1\", \"USER ID 2\"],\n\t\"id\": \"GENERATED UUID\",\n\t\"data\": {\n\t\t\"user\": \"From Postman\"\n\t}\n}"
 						},
 						"url": {
 							"raw": "https://{{apiServer}}/app/v1/bucket",
@@ -500,48 +533,7 @@
 								"bucket"
 							]
 						},
-						"description": "Store application data shared between users"
-					},
-					"response": []
-				},
-				{
-					"name": "Store Application Bucket Data",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer {{accessToken}}"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\t\"key\": \"user\",\n    \"value\": \"From Postman\"\n}"
-						},
-						"url": {
-							"raw": "https://{{apiServer}}/v1/app/bucket?id=BUCKET_ID",
-							"protocol": "https",
-							"host": [
-								"{{apiServer}}"
-							],
-							"path": [
-								"v1",
-								"app",
-								"bucket"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "BUCKET_ID",
-									"equals": true
-								}
-							]
-						},
-						"description": "Store application data shared between users"
+						"description": "Create application data shared between users"
 					},
 					"response": []
 				},
@@ -564,14 +556,14 @@
 							"raw": "{\n\t\"key\": \"user\",\n\t\"value\": \"data\"\n}"
 						},
 						"url": {
-							"raw": "https://{{apiServer}}/v1/app/bucket?id=BUCKET_ID",
+							"raw": "https://{{apiServer}}/app/v1/bucket?id=BUCKET_ID",
 							"protocol": "https",
 							"host": [
 								"{{apiServer}}"
 							],
 							"path": [
-								"v1",
 								"app",
+								"v1",
 								"bucket"
 							],
 							"query": [
@@ -583,6 +575,40 @@
 							]
 						},
 						"description": "Retrieve the data shared between users"
+					},
+					"response": []
+				},
+				{
+					"name": "Store Application Bucket Data",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{accessToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": \"1234\",\n\t\"key\": \"user\",\n    \"value\": \"From Postman 2\"\n}"
+						},
+						"url": {
+							"raw": "https://{{apiServer}}/app/v1/bucket",
+							"protocol": "https",
+							"host": [
+								"{{apiServer}}"
+							],
+							"path": [
+								"app",
+								"v1",
+								"bucket"
+							]
+						},
+						"description": "Store application data shared between users"
 					},
 					"response": []
 				},
@@ -602,25 +628,18 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": ""
+							"raw": "{\n\t\"id\": \"GENERATED UUID\"\n}"
 						},
 						"url": {
-							"raw": "https://{{apiServer}}/v1/app/bucket?id=BUCKET_ID",
+							"raw": "https://{{apiServer}}/app/v1/bucket",
 							"protocol": "https",
 							"host": [
 								"{{apiServer}}"
 							],
 							"path": [
-								"v1",
 								"app",
+								"v1",
 								"bucket"
-							],
-							"query": [
-								{
-									"key": "id",
-									"value": "BUCKET_ID",
-									"equals": true
-								}
 							]
 						},
 						"description": "Remove application data shared between users"
