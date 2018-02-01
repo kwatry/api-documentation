@@ -1,48 +1,48 @@
 participant Adult
 participant Your App
-Your App->iOKids: Get Auth Code
-Adult->iOKids: Log-in and Consent
-iOKids-->Your App: Return Auth Code
-Your App->iOKids: Get Token
-iOKids-->Your App: Return Token
-Your App->iOKids: API Calls
-iOKids-->Your App: API Responses
+Your App->playPORTAL: Get Auth Code
+Adult->playPORTAL: Log-in and Consent
+playPORTAL-->Your App: Return Auth Code
+Your App->playPORTAL: Get Token
+playPORTAL-->Your App: Return Token
+Your App->playPORTAL: API Calls
+playPORTAL-->Your App: API Responses
 
 participant Child
 participant Your App
-participant iOKids
+participant playPORTAL
 participant Parent
-Your App->iOKids: Get Auth Code
-Child->iOKids: Log-in and Consent
-iOKids-->Your App: Return Auth Code
-Your App->iOKids: Get Token
-iOKids-->Your App: Return Token
-Note right of iOKids: First sign-in only
-iOKids->Parent:Get Permission
-Parent-->iOKids: Approve or Reject
-iOKids->Your App: Notify Approval Status
-Your App->iOKids: API Calls
-iOKids-->Your App: API Responses
+Your App->playPORTAL: Get Auth Code
+Child->playPORTAL: Log-in and Consent
+playPORTAL-->Your App: Return Auth Code
+Your App->playPORTAL: Get Token
+playPORTAL-->Your App: Return Token
+Note right of playPORTAL: First sign-in only
+playPORTAL->Parent:Get Permission
+Parent-->playPORTAL: Approve or Reject
+playPORTAL->Your App: Notify Approval Status
+Your App->playPORTAL: API Calls
+playPORTAL-->Your App: API Responses
 
 
 participant User
 participant Your App
-Your App->iOKids: Get Auth Code
-User->iOKids: Log-in and Consent
-iOKids-->Your App: Return Auth Code
-Your App->iOKids: Get Token
-iOKids-->Your App: Return Token
-Your App->iOKids: API Calls
-iOKids-->Your App: API Responses
+Your App->playPORTAL: Get Auth Code
+User->playPORTAL: Log-in and Consent
+playPORTAL-->Your App: Return Auth Code
+Your App->playPORTAL: Get Token
+playPORTAL-->Your App: Return Token
+Your App->playPORTAL: API Calls
+playPORTAL-->Your App: API Responses
 
 
 participant User
 participant Your App
-Your App->iOKids: Request Log-in
-User->iOKids: Log-in
-iOKids-->Your App: Return Token
-Your App->iOKids: API Calls
-iOKids-->Your App: API Responses
+Your App->playPORTAL: Request Log-in
+User->playPORTAL: Log-in
+playPORTAL-->Your App: Return Token
+Your App->playPORTAL: API Calls
+playPORTAL-->Your App: API Responses
 
 
 https://bramp.github.io/js-sequence-diagrams/

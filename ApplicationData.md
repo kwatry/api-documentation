@@ -1,6 +1,6 @@
 # Application User Data API
 
-Application developers can use the iOKids Application User Data API to store and retrieve user-specific data for the logged-in
+Application developers can use the playPORTAL Application User Data API to store and retrieve user-specific data for the logged-in
 user. For example, a game developer may store a user's game history, average score, current level, and other user-specific
 data. Developers can also share data between users in a bucket. Buckets are used to track shared interactions between
 users, for example in multi-user game play or when two users interact.

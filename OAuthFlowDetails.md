@@ -1,9 +1,9 @@
-#### Implementation Details for iOKids OAuth Flow
-This documentation reviews the http calls and data exchange that form the iOKids Social Sign-On (OAuth 2.0) flow. 
+#### Implementation Details for playPORTAL OAuth Flow
+This documentation reviews the http calls and data exchange that form the playPORTAL Social Sign-On (OAuth 2.0) flow. 
 
 **Authorization Request**
 
-Display an iOKids Log-in to the user. In calling the log-in link, the web server application will identify itself with
+Display an playPORTAL Log-in to the user. In calling the log-in link, the web server application will identify itself with
 its client id. 
 
 ```
@@ -16,20 +16,20 @@ GET https://sso.iokids.net/oauth/signin?response_type=code
 
 A call to authorize includes these request parameters:
 * **response_type** - always 'code' for the web server application flow
-* **client_id** - your client id, found in the iOKids partner dashboard
-* **redirect_uri** - after login, iOKids will redirect back to a URL on your site. This URI must be pre-registered in the 
+* **client_id** - your client id, found in the playPORTAL partner dashboard
+* **redirect_uri** - after login, playPORTAL will redirect back to a URL on your site. This URI must be pre-registered in the 
 partner dashboard.
-* **scope** - a space delimited list of iOKids scopes for which your application is requesting access. This list must be 
-one of the defined iOKids Scopes below and be registered in the partner dashboard as scopes your application will request
+* **scope** - a space delimited list of playPORTAL scopes for which your application is requesting access. This list must be 
+one of the defined playPORTAL Scopes below and be registered in the partner dashboard as scopes your application will request
 * **state** - a string value provided by the web server application that maintains state between the authorization request 
-and the iOKids server response. The value will be returned as a request parameter to the 
+and the playPORTAL server response. The value will be returned as a request parameter to the 
 redirect URI and should be validated by the web server. This may be a nonce or base64 encoded object with information 
 relevant for the web server application
 
 **Authorization Prompt**
 
-In response to the authorization request, a web page login form for iOKids is displayed. The user logs in and decides 
-whether or not to allow to your app. After the user decides, iOKids will redirect to the redirect_uri provided in the 
+In response to the authorization request, a web page login form for playPORTAL is displayed. The user logs in and decides 
+whether or not to allow to your app. After the user decides, playPORTAL will redirect to the redirect_uri provided in the 
 initial request. 
 
 `GET https://REDIRECT_URI/callback?code=AUTH_CODE&state=NONCE`
@@ -53,13 +53,13 @@ POST https://sso.iokids.net/oauth/token
 
 The call to request a token includes these parameters posted in the request body:
 * **grant_type** - always 'authorization_code' for a token request using an authorization code
-* **code** - the authorization code provided by the iOKids server
-* **redirect_uri** - the callback URL provided to generate the authorization code. iOKids verifies the redirect_uri was
+* **code** - the authorization code provided by the playPORTAL server
+* **redirect_uri** - the callback URL provided to generate the authorization code. playPORTAL verifies the redirect_uri was
 pre-registered in the partner dashboard and the one used to generate the authorization code.
 * **client_id** - your client id, found in the partner dashboard
 * **client_secret** your client secret, found in the partner dashboard
 
-The response from iOKids will be:
+The response from playPORTAL will be:
 
 ```
 {
@@ -70,9 +70,9 @@ The response from iOKids will be:
 }
 ```
 
-* **access_token** - the iOKids access token to use in API calls. Use this token in the "Authorization" header as follows:
+* **access_token** - the playPORTAL access token to use in API calls. Use this token in the "Authorization" header as follows:
     ```Authorization: Bearer ACCESS_TOKEN``` 
-    The access token is a JSON Web Token which can be decoded to retrieve a unique identifier of the iOKids user.    
+    The access token is a JSON Web Token which can be decoded to retrieve a unique identifier of the playPORTAL user.    
 * **refresh_token** - once the access token expires, the web server application can retrieve a new one with the refresh 
 token (see below)
 * **expires_in** - in how many seconds the access token will expire
@@ -91,7 +91,7 @@ POST https://sso.iokids.net/oauth/token
 
 The call to request a token includes these parameters posted in the request body:
 * **grant_type** - always 'refresh_token' for a token request using a refresh token
-* **refresh_token** - the refresh token provided by the iOKids server in response to a token request
+* **refresh_token** - the refresh token provided by the playPORTAL server in response to a token request
 * **client_id** - your client id, found in the partner dashboard
 * **client_secret** your client secret, found in the partner dashboard
 
@@ -100,7 +100,7 @@ The call to request a token includes these parameters posted in the request body
 ### Header
 | Field | Name | Value | Description |
 | ----- | ---- | ----- | ----------- |
-| alg | Algorithm | RS256 | iOKids currently uses RS256 |
+| alg | Algorithm | RS256 | playPORTAL currently uses RS256 |
 | typ | Token Type | jwt | The type of token will always be jwt |
 
 ### Body
@@ -108,13 +108,13 @@ The call to request a token includes these parameters posted in the request body
 | ----- | ---- | ----- | ----------- |
 | iss | Issuer | sso.iokids.net | The JWT issuer. This value must be **sso.iokids.net** |
 | aud | Audience | [your client id] | The audience for this token. This value must be your client id. If it isn't, this token should be rejected. |
-| sub | Subject | | The unique identifier for this iOKids user |
+| sub | Subject | | The unique identifier for this playPORTAL user |
 | exp | Expiration Time | [milliseconds since unix epoch] | The time at which this token is no longer valid |
 | iat | Issued At | [milliseconds since unix epoch] | The time the token was issued. |
 | jti | Unique Identifier | | The unique identifier for this token. |
 
 ### Signature
-The signature should be validated by the OAuth client using the key(s) found in the [iOKids JSON Web Keys Set](https://sso.iokids.net/.well-known/jwks.json). 
+The signature should be validated by the OAuth client using the key(s) found in the [playPORTAL JSON Web Keys Set](https://sso.iokids.net/.well-known/jwks.json). 
 
 `example jwt...`
  
