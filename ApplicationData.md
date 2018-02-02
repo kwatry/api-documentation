@@ -8,7 +8,7 @@ users, for example in multi-user game play or when two users interact.
 Developers can test the API with a free [developer account](https://partner.iokids.net/). Partners can use 
 the API to ensure all user-specific application data is COPPA and GDPR compliant.
 
-Developers can review the [detailed Application User Data API specification](https://app.swaggerhub.com/apis/iOKids/ApplicationUserData/1.0.0) on SwaggerHub. 
+Developers can review the [detailed Application User Data API specification](https://app.swaggerhub.com/apis/playPORTAL/ApplicationUserData/1.0.0) on SwaggerHub. 
 
 This server's primary mode of interaction is via websockets.  API users should utilize a websocket connection for each
 user that wishes to interact with app data and app buckets. Developers can optionally use the RESTful API (see 

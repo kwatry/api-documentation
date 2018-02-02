@@ -1,3 +1,29 @@
+#GENERATE AT
+# https://bramp.github.io/js-sequence-diagrams/
+
+#zero-data-implicit
+participant User
+participant Your App
+Your App->playPORTAL: Get Auth Code
+User->playPORTAL: Log-in and Consent
+playPORTAL-->Your App: Return Auth Code
+Your App->playPORTAL: Get Token
+playPORTAL-->Your App: Return Token
+Your App->playPORTAL: API Calls
+playPORTAL-->Your App: API Responses
+
+
+#zero-data-auth-code
+participant User
+participant Your App
+Your App->playPORTAL: Request Log-in
+User->playPORTAL: Log-in
+playPORTAL-->Your App: Return Token
+Your App->playPORTAL: API Calls
+playPORTAL-->Your App: API Responses
+
+
+#NOT USED - Flow for Adults
 participant Adult
 participant Your App
 Your App->playPORTAL: Get Auth Code
@@ -8,6 +34,7 @@ playPORTAL-->Your App: Return Token
 Your App->playPORTAL: API Calls
 playPORTAL-->Your App: API Responses
 
+#NOT USED - Flow for Children
 participant Child
 participant Your App
 participant playPORTAL
@@ -24,25 +51,3 @@ playPORTAL->Your App: Notify Approval Status
 Your App->playPORTAL: API Calls
 playPORTAL-->Your App: API Responses
 
-
-participant User
-participant Your App
-Your App->playPORTAL: Get Auth Code
-User->playPORTAL: Log-in and Consent
-playPORTAL-->Your App: Return Auth Code
-Your App->playPORTAL: Get Token
-playPORTAL-->Your App: Return Token
-Your App->playPORTAL: API Calls
-playPORTAL-->Your App: API Responses
-
-
-participant User
-participant Your App
-Your App->playPORTAL: Request Log-in
-User->playPORTAL: Log-in
-playPORTAL-->Your App: Return Token
-Your App->playPORTAL: API Calls
-playPORTAL-->Your App: API Responses
-
-
-https://bramp.github.io/js-sequence-diagrams/

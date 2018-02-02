@@ -40,7 +40,7 @@ that will interact with the playPORTAL APIs. You will need an application identi
 
 ## Which APIs do I Need?
 Every developer must implement the [playPORTAL Social Sign-On API](/playPORTAL-SSO.md). Most developers will will want to interface
-with the [User Profile](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) and [Friends](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) APIs. Other APIs are available for various needs: 
+with the [User Profile](https://app.swaggerhub.com/apis/playPORTAL/Profile/1.0.0) and [Friends](https://app.swaggerhub.com/apis/playPORTAL/Friends/1.0.0) APIs. Other APIs are available for various needs: 
 inviting friends to use interactive games, securely storing user data your app needs, interfacing with other applications 
 and toys, and managing the permissions that govern all of these interactions. For detailed documentation about each API, 
 click the name below. 
@@ -48,11 +48,11 @@ click the name below.
 | API | Version | Release Status | Description |
 | --- | ------- | ------ | ----------- |
 | [playPORTAL <br />Social Sign On](/playPORTAL-SSO.md) | 1.0.0 | released | Integrate playPORTAL users with your application. |
-| [Profile](https://app.swaggerhub.com/apis/iOKids/Profile/1.0.0) | 1.0.0 | released | Retrieve profile information about an playPORTAL user |
-| [Friends](https://app.swaggerhub.com/apis/iOKids/Friends/1.0.0) | 1.0.0 | released | Get a users' list of friends, establish new friendships through your app |
-| [Search](/https://app.swaggerhub.com/apis/iOKids/Search/1.0.0) | 1.0.0 | released | Search for other playPORTAL users who use your application |
+| [Profile](https://app.swaggerhub.com/apis/playPORTAL/Profile/1.0.0) | 1.0.0 | released | Retrieve profile information about an playPORTAL user |
+| [Friends](https://app.swaggerhub.com/apis/playPORTAL/Friends/1.0.0) | 1.0.0 | released | Get a users' list of friends, establish new friendships through your app |
+| [Search](/https://app.swaggerhub.com/apis/playPORTAL/Search/1.0.0) | 1.0.0 | released | Search for other playPORTAL users who use your application |
 | [Application User Data](/ApplicationData.md) | 1.0.0 | released | Securely store the user data your app needs |
-| [Image](https://app.swaggerhub.com/apis/iOKids/Image/1.0.0) | 1.0.0 | released | Retrieve and store images |
+| [Image](https://app.swaggerhub.com/apis/playPORTAL/Image/1.0.0) | 1.0.0 | released | Retrieve and store images |
 | Notify | 1.0.0 | pre-release | Update other users of your application as needed to support realtime competitions |
 | Share to playPORTAL |  | *planning* | Share content from your app or toy on an playPORTAL profile and with friends |
 | Chat |   | *planning* | COPPA-compliant chat between friends **with moderation** |

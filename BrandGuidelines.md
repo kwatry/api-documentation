@@ -10,13 +10,13 @@ Developers have two button options:
 * A Rectangular button with rounded edges<br/>
     <img alt="playPORTAL Rounded Rectangular Social Sign-On Button" src="iOKids%20SSO%20-%20Rounded%20Rectangle.png" style="height:48px">
     
-## Create the iOKids button with code
+## Create the playPORTAL button with code
 
 Developers have the option of creating the button in code using the following standards:
 * Rectangular button or rectangular with rounded edges
 * Button background color is the hex value: "53B8C6"
-* White iOKids Logo Glyph on the left of the button face<br />
-    <div style="background:#53B8C6; width:48px; height:48px;"><img src="iOKids%20White%20Glyph.png" alt="iOKids White Glyph" style="height:48px"></div>
+* White playPORTAL Logo Glyph on the left of the button face<br />
+    <div style="background:#53B8C6; width:48px; height:48px;"><img src="iOKids%20White%20Glyph.png" alt="playPORTAL White Glyph" style="height:48px"></div>
 * Button text is ALWAYS "Sign in with playPORTAL" (please match the text and case exactly)
 * Button font is ALWAYS [Roboto](https://fonts.google.com/specimen/Roboto)
 
